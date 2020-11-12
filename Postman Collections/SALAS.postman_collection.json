@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "8616da55-10f2-401b-8758-2ab6a944e64e",
+		"name": "SALAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Salas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57646/api/Salas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Salas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Sala por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Salas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"numeroDeSala\": 4,\r\n        \"capacidad\": 30,\r\n        \"proyector\": true,\r\n        \"pizarra\": true,\r\n        \"accesoInet\": true\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57646/api/Salas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Salas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Sala",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"salaId\": 1,\r\n        \"numeroDeSala\": 1,\r\n        \"capacidad\": 20,\r\n        \"proyector\": true,\r\n        \"pizarra\": true,\r\n        \"accesoInet\": true\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57646/api/Salas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Salas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Salas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57646/api/Salas/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Salas",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "aad9b497-6230-46a8-813d-7a1d3b4f6ef6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c5b7ba73-6f21-42d0-b8a6-92f027111199",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

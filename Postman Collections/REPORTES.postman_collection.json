@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "71f4c35b-1e01-4a64-8ecc-b71a17e6c697",
+		"name": "REPORTES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Reportes de reservas por Hora de Inicio y Fin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57646/api/Reportes?horainicio=2020-11-09T10:30:00&horafin=2020-11-09T11:30:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Reportes"
+					],
+					"query": [
+						{
+							"key": "horainicio",
+							"value": "2020-11-09T10:30:00"
+						},
+						{
+							"key": "horafin",
+							"value": "2020-11-09T11:30:00"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

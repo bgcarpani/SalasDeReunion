@@ -1,0 +1,23 @@
+{
+	"info": {
+		"_postman_id": "d6a51695-16a0-4dec-8675-b92d6c6f9bf8",
+		"name": "SUGERENCIA",
+		"description": "Sugerencia de selección de salas según necesidad.\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET SeleccionDeSalas por necesidad",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "-Capacidad: 20\r\n-Proyector: Si\r\n-Pizarra: Si\r\n-Acceso a internet: Si\r\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

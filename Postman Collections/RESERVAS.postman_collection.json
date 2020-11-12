@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "d0bf854b-4483-4105-8353-3a8e8a5da603",
+		"name": "RESERVAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Reservas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57646/api/Reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Reservas por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Reservas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"salaId\": 1,\r\n        \"horaInicio\": \"2020-11-09T10:30:00\",\r\n        \"horaFin\": \"2020-11-09T11:30:00\",\r\n        \"nombreReserva\": \"Carpani Bautista\",\r\n        \"cantidadDeGente\": 10,\r\n        \"proyector\": false,\r\n        \"pizarra\": false,\r\n        \"accesoInet\": false,\r\n        \"estadoReservacion\": \"Reservado\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57646/api/Reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Reservas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"reservasId\":1,\r\n        \"salaId\": 1,\r\n        \"horaInicio\": \"2020-11-09T10:30:00\",\r\n        \"horaFin\": \"2020-11-09T11:30:00\",\r\n        \"nombreReserva\": \"Carpani Bautista\",\r\n        \"cantidadDeGente\": 10,\r\n        \"proyector\": false,\r\n        \"pizarra\": false,\r\n        \"accesoInet\": false,\r\n        \"estadoReservacion\": \"Reservado\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57646/api/Reservas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Reservas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Reservas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57646/api/Reservas/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57646",
+					"path": [
+						"api",
+						"Reservas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
